@@ -6,7 +6,14 @@
     <title>Google.com</title>
 
     <style>
-        #google-logo {margin: auto;}
+        #google-logo {
+                position: relative; 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 150px;
+                
+        }
         ul {
                 list-style-type: none;
                 padding: 0;
@@ -15,19 +22,39 @@
         li {
                 float: left;
        }
-       a {
+        a {
                display: block;
                background-color: #dddddd;
        }
-        
+        #navbar { li {
+                float: left;
+                 }
+        a {
+               display: block;
+               background-color: #dddddd;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+        }
+        .box: {text-align: center;}
+                
 
+        }
+        .center {text-align: center}
+        #GoogleSearch {
+                background-color: #f8f9fa;
+                margin-top: 20px;
+        }
+        
+        
     </style>
 </head>
 
 <body>
+        <nav id= "navbar">
 
         <ul>
-                <li><a href="#+You">+You</a></li>        
+                <li><a href="#+You">+You</a></li>        ￼
                 <li><a href="#Search">Search</a></li>                     
                 <li><a href="#Images">Images</a></li> 
                 <li><a href="#Maps">Maps</a></li> 
@@ -39,12 +66,23 @@
                 <li><a href="#More">More</a></li> 
                 
         </ul>
+        </nav>
         
         <img src= "https://www.google.be/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" id="google-logo"/>
-        <form action= "">
-        <input type= "text">
-        <button type="submit">Google Search</button>
-        <button type="submit">I'm feeling lucky</button>
-        </form>
+        
+        <div class="center">
+
+                <input type="text">
+
+        </div>
+
+
+        <div class="center">
+
+                
+                <button type="submit" id="GoogleSearch">Google Search</button>
+                <button type="submit">I'm feeling lucky</button>
+        </div>
+
 </body>
 </html>
