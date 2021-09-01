@@ -8,70 +8,88 @@
     <style>
         #google-logo {
                 position: relative; 
+                
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 150px;
                 
         }
-        ul {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-        }
-        li {
-                float: left;
-       }
-        a {
-               display: block;
-               background-color: #dddddd;
-       }
-        #navbar { li {
-                float: left;
-                 }
-        a {
-               display: block;
-               background-color: #dddddd;
-                position: fixed;
-                top: 0px;
-                left: 0px;
-        }
-        .box: {text-align: center;}
-                
+        
+        
+                   
 
+        /*add a black background color to the top navigation */
+        .topnav {background-color: #333;  
+                overflow: hidden;
+                width: 100%;
+                }
+        /*test van de media query functie*/
+        @media (max-width:550px) {
+                .topnav {background-color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        width: 80px;
+                }
+                .topnav a {font-size: 16px;
+                        
+                        text-align: center;
+
+                        
+                }
         }
-        .center {text-align: center}
-        #GoogleSearch {
+        /*style the links inside the navigation bar */
+       .topnav a {
+                float:left;
+                color: #f2f2f2;
+                text-align: center;
+                padding :14px 16px;
+                margin-left: 15px;
+                text-decoration: none;
+                
+                        
+        }  
+                
+        
+        .center {text-align: center;               
+        }
+        .Search {
                 background-color: #f8f9fa;
                 margin-top: 20px;
         }
+
         
+        input {border: 0.5px solid rgb(150, 150, 238);
+                background-image: ;
+                width: 350px;
+                height: 22px;
+                }
         
     </style>
 </head>
 
 <body>
-        <nav id= "navbar">
 
-        <ul>
-                <li><a href="#+You">+You</a></li>        ￼
-                <li><a href="#Search">Search</a></li>                     
-                <li><a href="#Images">Images</a></li> 
-                <li><a href="#Maps">Maps</a></li> 
-                <li><a href="#Youtube">Youtube</a></li> 
-                <li><a href="#News">News</a></li> 
-                <li><a href="#Gmail">Gmail</a></li> 
-                <li><a href="#Documents">Documents</a></li> 
-                <li><a href="#Calendar">Calendar</a></li> 
-                <li><a href="#More">More</a></li> 
-                
-        </ul>
-        </nav>
+        <div class= "topnav" >
+            <a class="active" href="#+You">+You</a>
+        
+                      ￼
+                <a href="#Search">Search</a>                    
+                <a href="#Images">Images</a>
+                <a href="#Maps">Maps</a> 
+                <a href="#Youtube">Youtube</a>
+                <a href="#News">News</a>
+                <a href="#Gmail">Gmail</a> 
+                <a href="#Documents">Documents</a> 
+                <a href="#Calendar">Calendar</a>
+                <a href="#More">More</a>          
+          
+         </div>
         
         <img src= "https://www.google.be/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo" id="google-logo"/>
         
         <div class="center">
-
+                
                 <input type="text">
 
         </div>
@@ -80,8 +98,8 @@
         <div class="center">
 
                 
-                <button type="submit" id="GoogleSearch">Google Search</button>
-                <button type="submit">I'm feeling lucky</button>
+                <button type="submit" class="Search">Google Search</button>
+                <button type="submit" class="Search">I'm feeling lucky</button>
         </div>
 
 </body>
