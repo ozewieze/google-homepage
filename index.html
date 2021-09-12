@@ -4,46 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Google.com</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <style>
            
 
         #google-logo {
-                position: relative; 
-                
+                position: relative;                 
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 150px;
                 
-        }
-        
-        
-                   
-
+        }     
         /*add a black background color to the top navigation */
         .topnav {background-color: #333;  
                 overflow: hidden;
                 width: 100%;
                 }
         /*test van de media query functie*/
-        @media (max-width:550px) {
-                .topnav {background-color: blue;
-                        display: flex;
-                        flex-direction: column;
-                        width: 80px;
-                }
-                .topnav a {font-size: 16px;
-                        
-                        text-align: center;
 
-                        
-                }
-        }
         /*style the links inside the navigation bar */
        .topnav a {
                 float:left;
-                color: #f2f2f2;
+                color: #c2bcbc;
                 text-align: center;
                 padding :14px 16px;
                 margin-left: 15px;
@@ -54,14 +40,14 @@
         .dropdown {
                float: left;
                overflow: hidden;
+        
                
         } 
-        .dropdown .dropbtn {
-                margin: 0;
+        .dropdown .dropbtn {                
                 border: none;
                 outline: none;
                 background-color: #333;
-                color: #f2f2f2;
+                color: #c2bcbc;
                 margin-left: 15px;
                 text-align: center;
                 padding: 14px 16px;
@@ -81,7 +67,32 @@
                 float:none;
                 color: black;
                
-        }    
+        }  
+        @media (max-width:550px) {
+                .topnav {
+                        background-color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        width: 120px;
+                }
+                .topnav a {font-size: 14px;
+                        
+                        text-align: center; 
+                }
+                .dropdown {
+                        background-color: blue;
+                        display: flex;
+                        flex-direction: column;
+                        width: 120px;
+                }
+                .dropdown .dropbtn {
+                        
+                        
+                
+                
+                        
+        
+        }  
         
         .center {text-align: center;               
         }
@@ -93,11 +104,12 @@
         
         #inputwrapper {
                 position: relative;
+                margin-top: 2em;
                 margin-left: auto;
                 margin-right: auto;
                 border: 0.5px solid rgb(150, 150, 238);
                 display: flex;
-                width: 450px;
+                width: 500px;
                 height: 30px;
                 text-align: right;
                 justify-content: flex-end;
@@ -110,34 +122,32 @@
         
         
         
-               
-                
-                
-          
-        
         #mic{
                 
                 background-color: transparent;
                 border: none;
-                
-                
-        }   
+                color:rgb(0, 0, 0, 0.50)   
+        }  
+        
+        
+        
 
         #Sign-in {float: right;
                 margin-top: 1.5em;
                 padding:0.5em 1em;
-                border-color:rgb(214, 205, 205);
+                border-color:rgb(170, 167, 167);
                 border-width: 0.1em;
                 border-radius: 8%;;
                 border-style: solid;
         }
-
+        #Sign-in:hover  {box-shadow: 3px 4px 3px rgba(0,0,0,0.23)}
         .Cursor:hover {cursor:pointer;}
         .dropdown:hover .dropdown-content {
                 display: block;
         }
-        a:hover {background-color: rgb(241, 236, 236);}
-        .dropbtn:hover {background-color: grey;}
+        a:hover {background-color: rgb(143, 139, 139);}
+        a:focus {color: white;}
+        .dropbtn:hover {background-color: rgb(143, 139, 139)}
         .Search {
                 border-color:rgb(214, 205, 205);
                 border-width: 0.1em;
@@ -179,7 +189,7 @@
         
                 <div id= "inputwrapper" >                               
                         <input id="text" name="search">
-                        <button type="submit" class="Cursor" id="mic"><img src="google-mic.png"></button>
+                        <button type="submit" class="Cursor material-icons" id="mic">mic</button>
                 
                 </div>
                  
